@@ -2,17 +2,24 @@
   "name": "dailybot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
+  "type": "module",
   "scripts": {
-    "build": "node src\\App.js",
-    "dev": "nodemon src\\App.js"
+    "build": "node dist\\App.js",
+    "dev": "nodemon dist\\App.js"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "openai",
+    "dotenv",
+    "puppeteer",
+    "proxy",
+    "command"
+  ],
   "author": "",
   "license": "ISC",
-  "repository": {
-    
-  },
+  "repository": {},
   "readme": "",
   "devDependencies": {
     "nodemon": "^3.0.2"
@@ -23,6 +30,7 @@
     "@types/puppeteer": "^7.0.4",
     "dotenv": "^16.3.1",
     "https-proxy-agent": "^7.0.2",
+    "node-telegram-bot-api": "^0.64.0",
     "openai": "^4.24.1",
     "puppeteer": "^21.6.1",
     "tsc": "^2.0.4",
