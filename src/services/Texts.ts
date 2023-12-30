@@ -6,9 +6,10 @@ export const START_TEXT = `Добро пожаловать!\nМеня зовут
 export const START_PANEL_TEXT = "⚙️Выберете нужный функционал⚙️"
 export const START_PANEL: KeyboardButton[][] = [
     [{text:"Chat GPT"}, {text:""}],
-    [{text:"Прогноз погоды"}, {text:"Курс валюты"}],
+    [{text:"Прогноз погоды", request_location: true}, {text:"Курс валюты"}],
     [{text:"Помощь"}, {text:""}]
 ]
 export const BACK_PANEL: KeyboardButton[][] = [
     [{text:"◀️ На главную"}, {text:""}],
 ]
+export const WAIT_TEXT = "Запрос выполняется..."

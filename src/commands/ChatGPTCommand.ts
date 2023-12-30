@@ -1,7 +1,7 @@
 import TelegramBot, { Message } from "node-telegram-bot-api";
 import { Command } from "./Command.js";
 import { ChatGPT } from "../services/ChatGPTService.js";
-import { BACK_PANEL } from "../services/Texts.js";
+import { BACK_PANEL, WAIT_TEXT } from "../services/Texts.js";
 import { BotEventEmitter } from "../services/BotEventEmitter.js";
 
 export class ChatGPTCommand extends Command {
@@ -30,7 +30,7 @@ export class ChatGPTCommand extends Command {
     }
     private async GetChatGPT(msg: Message): Promise<void> {
         if (['◀️ На главную', '/start'].includes(msg.text || '')) return;
-        const wait_msg = await this.bot.sendMessage(msg.chat.id, "Запрос выполняется...", {
+        const wait_msg = await this.bot.sendMessage(msg.chat.id, WAIT_TEXT, {
             reply_markup: {
                 keyboard: BACK_PANEL,
                 resize_keyboard: true
