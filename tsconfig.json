@@ -1,0 +1,23 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noEmitOnError": true,
+        "strictNullChecks": true,
+        "target": "ES6",
+        "outDir": "dist",
+        "declaration": true,
+        "declarationDir": "dist/d.ts",
+        "module": "ES2020",
+        "allowJs": true,
+        "moduleResolution": "Node",
+        "allowSyntheticDefaultImports": true
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "ts-node": {
+        "esm": true
+    }
+}

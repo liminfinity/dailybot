@@ -2,11 +2,40 @@
   "name": "dailybot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "App.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node dist\\App.js",
+    "dev": "nodemon dist\\App.js"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "openai",
+    "dotenv",
+    "puppeteer",
+    "proxy",
+    "command"
+  ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {},
+  "readme": "",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^20.10.5",
+    "@types/node-telegram-bot-api": "^0.64.1",
+    "@types/puppeteer": "^7.0.4",
+    "axios": "^1.6.3",
+    "dotenv": "^16.3.1",
+    "https-proxy-agent": "^7.0.2",
+    "node-telegram-bot-api": "^0.64.0",
+    "openai": "^4.24.1",
+    "puppeteer": "^21.6.1",
+    "tsc": "^2.0.4",
+    "typescript": "^5.3.3"
+  }
 }
