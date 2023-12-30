@@ -13,3 +13,4 @@ export const BACK_PANEL: KeyboardButton[][] = [
     [{text:"◀️ На главную"}, {text:""}],
 ]
 export const WAIT_TEXT = "Запрос выполняется..."
+export const HELP_TEXT = "/start - Меню\n/help - помощь"
