@@ -1,12 +1,11 @@
 {
   "name": "dailybot",
   "version": "1.0.0",
-  "description": "",
+  "description": "Телеграм бот для получения ежедневной информации",
   "main": "App.js",
-  "type": "module",
   "scripts": {
-    "build": "node dist\\App.js",
-    "dev": "nodemon dist\\App.js"
+    "build": "tsc && node dist\\App.js",
+    "dev": "tsx --watch src\\App.ts"
   },
   "keywords": [
     "typescript",
@@ -17,12 +16,16 @@
     "proxy",
     "command"
   ],
-  "author": "",
+  "author": "liminfinity",
   "license": "ISC",
-  "repository": {},
-  "readme": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liminfinity/dailybot"
+  },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.3"
   },
   "dependencies": {
     "@types/axios": "^0.14.0",
@@ -35,7 +38,6 @@
     "node-telegram-bot-api": "^0.64.0",
     "openai": "^4.24.1",
     "puppeteer": "^21.6.1",
-    "tsc": "^2.0.4",
-    "typescript": "^5.3.3"
+    "tsc": "^2.0.4"
   }
 }

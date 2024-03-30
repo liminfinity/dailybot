@@ -1,7 +1,6 @@
 import dotenv from 'dotenv'
 import { HttpsProxyAgent } from 'https-proxy-agent'
 import OpenAI from 'openai'
-
 dotenv.config()
 
 export class ChatGPT {
@@ -10,7 +9,7 @@ export class ChatGPT {
     constructor() {
         this.openai = new OpenAI({
             apiKey: process.env["CHATGPT_KEY"],
-            httpAgent: new HttpsProxyAgent('http://polieshko04:bt6eQ2sHmn@103.230.69.36:50100')
+            httpAgent: new HttpsProxyAgent(process.env.PROXY_URL as string)
         })
     }
     public async simpleRequest(request: string): Promise<string> {
